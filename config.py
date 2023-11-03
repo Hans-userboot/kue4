@@ -8,13 +8,13 @@ from logging.handlers import RotatingFileHandler
 
 load_dotenv("config.env")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "postgres://igtdyzeb:1iduJSwSHJQiU9YRjIzbcnRNbsjc6pK-@arjuna.db.elephantsql.com/igtdyzeb")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 API_ID = int(os.environ.get("API_ID", "20136777"))
 API_HASH = os.environ.get("API_HASH", "47e17360fa70c25ee2fad9472eeff090")
 
 CHANNEL_DB = int(os.environ.get("CHANNEL_DB", "-1002112070054"))
-DATABASE_URL = os.environ.get("DATABASE_URL", "")
+DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://igtdyzeb:1iduJSwSHJQiU9YRjIzbcnRNbsjc6pK-@arjuna.db.elephantsql.com/igtdyzeb")
 
 RESTRICT = strtobool(os.environ.get("RESTRICT", "True"))
 
